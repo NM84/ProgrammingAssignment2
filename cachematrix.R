@@ -3,8 +3,8 @@
 ## if the inverse has already been calculated, it will instead find the cached data and return it
 
 makeCacheMatrix <- function(x = matrix()) {
-  invex <- NULL
-  set <- cuntion(y) {
+  inv_x <- NULL
+  set <- funtion(y) {
     x <<- y
     inv_x <<- NULL
   }
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve returns the inverse of a matrix (x) created by the makeCachedMatrix
 
 cacheSolve <- function(x, ...) {
-  inve_x <- x$inverse()
+  inv_x <- x$inverse()
   if(!is.null(inv_x)) {
     message("getting cached inverse matrix")
     return(inv_x)
